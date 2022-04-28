@@ -2,5 +2,10 @@
 
 void Plant::getColor()
 {
-	cout << "Цвет: " << color << end;
+	cout << "Цвет: " << color << endl;
+}
+
+void Plant::isAlive()
+{
+	cout << "Да, оно живое \n";
 }

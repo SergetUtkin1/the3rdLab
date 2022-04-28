@@ -9,8 +9,8 @@ class Plant
 public:
 	virtual void getSmell() = 0;
 	void getColor();
+	void isAlive();
 protected:
 	string smell;
 	string color;
 };
-

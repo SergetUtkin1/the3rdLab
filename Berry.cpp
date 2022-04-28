@@ -1,8 +1,21 @@
 #include "Berry.h"
 
-Berry::Berry(string s)
+Berry::Berry(string s, string c, int d)
 {
     smell = s;
+    color = c;
+    diameter = d;
+}
+
+Berry::Berry(string s, string c)
+{
+    smell = s;
+    color = c;
+}
+
+Berry::~Berry()
+{
+    cout << "~ƒеструктор класса Berry \n";
 }
 
 void Berry::getSmell()
@@ -12,15 +25,15 @@ void Berry::getSmell()
 
 void Berry::getColor()
 {
-    cout << "÷вет €годы: " << color;
+    cout << "÷вет €годы: " << color << endl;
 }
 
 void Berry::getBerry()
 {
-    cout << "¬ы сорвали €году";
+    cout << "¬ы сорвали €году" << endl;
 }
 
 void Berry::getDiameter()
 {
-    cout << "ƒиаметр €годы: " << (diameter == 0 ? "Ќеопеределено" : to_string(diameter) + "мм");
+    cout << "ƒиаметр €годы: " << (diameter == 0 ? "Ќеопеределено" : to_string(diameter) + "мм") << endl;
 }

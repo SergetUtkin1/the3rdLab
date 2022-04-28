@@ -3,11 +3,15 @@
 class Berry :
     public Plant
 {
-    Berry(string s);
-
 public:
+    Berry(string s, string c, int d);
+    Berry(string s, string c);
+
+    ~Berry();
+
     void getSmell() override;
     void getColor();
+
     void getBerry();
     void getDiameter();
 

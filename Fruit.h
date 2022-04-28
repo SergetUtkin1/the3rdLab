@@ -6,9 +6,14 @@ class Fruit :
 public:
     Fruit(string s, string c, int w);
     Fruit(string s, string c);
+
+    ~Fruit();
+
     void getSmell() override;
     void getColor();
+
     void getFruit();
+    void getWeigthOfFruit();
 
 protected:
     string smell = "фрукт";

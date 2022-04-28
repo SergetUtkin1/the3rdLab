@@ -6,8 +6,12 @@ class Flower :
 public:
     Flower(string s, string c, int cnt);
     Flower(string s, string c);
+
+    ~Flower();
+
     void getSmell() override;
     void getColor();
+
     void getFlower();
     void getCountOfPetal();
 
